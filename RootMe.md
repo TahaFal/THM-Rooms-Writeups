@@ -82,7 +82,7 @@ Test if we are root !!
 whoami
 root
 ```
-**root.txt** 
+**root.txt ??** 
 
 Man i just helped you to get a root shell, find it YOURSELF !! LOL
 
