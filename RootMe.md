@@ -33,18 +33,18 @@ We use ffuf: ( U can use GobBuster, it's the same )
 └─$ ffuf -u http://10.128.184.1/FUZZ -w /usr/share/wfuzz/wordlist/general/common.txt -mc 200
 ```
 
-UPP, we have 4 folders, but the suspicious one and that we can exploit is **/uploads/**  — straight to: `http://target_machine_ip/uploads/
+UPP, we have 4 folders, but the suspicious one and that we can exploit is **/uploads/**  — straight to: *http://target_machine_ip/uploads/*
 
 ## The key of getting a shell : 
 
 So we can upload a file in, the first idea came to my mind is uploading a php_reverse_shell and get access to the machine: (visit the link -https://github.com/pentestmonkey/php-reverse-shell/blob/master/php-reverse-shell.php - ---> copy the script ---> change the ip (your ip) and port ----> upload it!)
 
-**Here is the problem the machine doesn't accept a php file, so how can we trick it?? The first thing i did i played with extension ( .php.jpg instead of .php / .pHp instead of .php) and the one it works is .phtml ; So access it in http://target_machine/uploads/shell.phtml**
+**Here is the problem the machine doesn't accept a php file, so how can we trick it?? The first thing i did i played with extension( .php.jpg or .pHp instead of .php) and the one it works is .phtml ;
+So access it: http://target_machine/uploads/shell.phtml**
 
 Open a shell and write :
 
 ```bash
-```
 └─$ nc -lvnp port
 ---
 
