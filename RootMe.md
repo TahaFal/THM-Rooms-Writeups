@@ -42,14 +42,14 @@ So we can upload a file in, the first idea came to my mind is uploading a php_re
 **Here is the problem the machine doesn't accept a php file, so how can we trick it?? The first thing i did i played with extension( .php.jpg or .pHp instead of .php) and the one it works is .phtml ;
 So access it: http://target_machine/uploads/shell.phtml**
 
-Open a shell and write :
+Open a new shell and write :
 
 ```bash
 └─$ nc -lvnp port
----
+```
 
 
-**user.txt**
+## TASK3 - *user.txt*
 
 Without wasting time, we search for it:
 
@@ -57,8 +57,9 @@ Without wasting time, we search for it:
 $ find / -name user.txt 2>/dev/null
 ```
 The path is: /var/www/user.txt
+
 the flag is: 
-**THM{y0u_g0t_a_sh3ll}**
+     **THM{y0u_g0t_a_sh3ll}**
 
 ## Privesc:
 
@@ -84,6 +85,8 @@ root
 **root.txt** 
 
 Man i just helped you to get a root shell, find it YOURSELF !! LOL
+
+Hope you find this interesting !
 
 
 **AND DONE!** 
