@@ -49,7 +49,7 @@ Open a new shell and write :
 ```
 
 
-## TASK3 - *user.txt*
+## Task3 - Getting a shell:
 
 Without wasting time, we search for it:
 
@@ -61,7 +61,7 @@ The path is: /var/www/user.txt
 the flag is: 
      **THM{y0u_g0t_a_sh3ll}**
 
-## Privesc:
+## Task4 - Privesc:
 
 We search for files with SUID permissions 
 
@@ -86,11 +86,12 @@ root
 
 Man i just helped you to get a root shell, find it YOURSELF !! LOL
 
+
 Hope you find this interesting !
+
 
 
 **AND DONE!** 
 
----
 
 
